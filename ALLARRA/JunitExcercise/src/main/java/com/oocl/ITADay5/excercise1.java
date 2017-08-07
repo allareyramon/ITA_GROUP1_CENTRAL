@@ -17,7 +17,7 @@ public class excercise1 {
 		{
 		case 3:
 		System.out.println ("zero");
-		ret.add("zero");
+		ret.add("1zero");
 		break;
 		case 13:
 		System.out.println ("one");
