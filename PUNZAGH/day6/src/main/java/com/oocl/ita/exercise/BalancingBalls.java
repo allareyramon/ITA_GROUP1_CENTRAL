@@ -25,11 +25,11 @@ public class BalancingBalls {
 		}
 		ballArr.put(randomNum, new Balls(weight,false));
 		HashMap<Integer,HashSet> Hashmaps = new HashMap<Integer,HashSet>();
-		for(int sets=1;sets<=3) {
+		for(int sets=1;sets<=3;sets++) {
 			if(ballArr.size()%sets !=0) {
 				
 			}
-			Hashsets.put(sets,new HashSet)
+		//	Hashsets.put(sets,new HashSet)
 		}
 //		HashSet<Balls> Hashseta = new HashSet<Balls>();
 //		HashSet<Balls> Hashsetb = new HashSet<Balls>();
@@ -53,7 +53,7 @@ public class BalancingBalls {
 	}
 	
 	public Boolean isBalance(HashSet<Balls> seta,HashSet<Balls> setb) {
-		if(seta.contains())
+	//	if(seta.contains())
 		return true;
 	}
 }
