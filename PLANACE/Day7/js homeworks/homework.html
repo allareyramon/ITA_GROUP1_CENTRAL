@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Banking in Javascript</title>
+  </head>
+  <body>
+	 
+	
+	<form action="/action.php" method="post">
+	Balance: 
+	<input type="number" name="balance" value="10000" id="balance" readonly>
+	<br>
+	Amount to Deposit/Withdraw:
+	<input type="number" name="money" value="0" id="money">
+	<br>
+	<input type="submit" value="Deposit" onclick="depositBalance()">
+	<input type="submit" value="Withdraw" onclick="withdrawBalance()">
+	<input type="submit" value="Reset Balance" onclick="resetBalance()">
+	</form> 
+	<p id="result"></p>
+	<script>
+	function resetBalance()
+	{
+		document.getElementById("balance").value = 10000;
+	}
+	
+	function depositBalance(){
+		var balance = parseInt(document.getElementById("balance").value);
+		var depositAmt = parseInt(document.getElementById("money").value);
+		var newBalance = balance + depositAmt;
+		
+		document.getElementById("balance").value = newBalance;
+		document.getElementById("money").value = 0;
+		document.getElementById("result").innerHTML = "Deposited " + depositAmt + ", new balance is " + newBalance;
+	}
+	</script>
+  </body>
+</html>
