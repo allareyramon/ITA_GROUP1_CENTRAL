@@ -17,7 +17,6 @@ class Thread1 implements Runnable {
 			chat.askQuestion(questions[i], t1.getName());
 		}
 	}
-
 }
 
 class Thread2 implements Runnable {

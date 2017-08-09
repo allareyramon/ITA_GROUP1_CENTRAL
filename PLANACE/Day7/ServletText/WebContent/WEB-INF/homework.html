@@ -8,7 +8,7 @@
 
 	
 		Balance: <br> <input type="text" name="balance" value="10000"
-			id="balance" readonly> <br> Amount to Deposit/Withdraw:
+			id="balance" readonly> <br> Amount to Deposit or Withdraw:
 		<input type="number" name="money" value="0" id="money"> <br>
 		<input type="submit" value="Deposit" onclick="depositBalance()">
 		<input type="submit" value="Withdraw" onclick="withdrawBalance()">
@@ -19,7 +19,7 @@
 	<script>
 		function resetBalance() {
 			document.getElementById("balance").value = 10000;
-			document.getElementById("result").innerHTML = "";
+			document.getElementById("result").innerHTML = x.hi.value;
 			document.getElementById("money").value = 0;
 		}
 
@@ -64,6 +64,7 @@
 						+ withdrawAmt + ", old balance is " + balance
 						+ ", new balance is " + newBalance
 						+ " without service charge";
+			
 			}
 		}
 	</script>

@@ -6,19 +6,20 @@
 <body>
 
 
-	<form action="/action.php" method="post">
+	
 		Balance: <br> <input type="text" name="balance" value="10000"
 			id="balance" readonly> <br> Amount to Deposit/Withdraw:
 		<input type="number" name="money" value="0" id="money"> <br>
 		<input type="submit" value="Deposit" onclick="depositBalance()">
 		<input type="submit" value="Withdraw" onclick="withdrawBalance()">
 		<input type="submit" value="Reset Balance" onclick="resetBalance()">
-	</form>
 	<p id="result"></p>
 
 	<script>
 		function resetBalance() {
 			document.getElementById("balance").value = 10000;
+			document.getElementById("result").innerHTML = "";
+			document.getElementById("money").value = 0;
 		}
 
 		function depositBalance() {

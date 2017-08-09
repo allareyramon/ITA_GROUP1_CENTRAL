@@ -28,7 +28,7 @@ public class ServletTest1 extends HttpServlet {
 		// TODO Auto-generated method stub
 		//response.getWriter().append("Served at: ").append(request.getContextPath());
 		//response.getWriter().println("Hello World");
-		request.getRequestDispatcher("/WEB-INF/test.html").forward(request, response);
+		request.getRequestDispatcher("/WEB-INF/homework.html").forward(request, response);
 	}
 
 	/**

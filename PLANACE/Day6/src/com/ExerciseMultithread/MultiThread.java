@@ -11,7 +11,7 @@ class Runner extends Thread {
 		for (int i = 0; i <= 10; i++) {
 			System.out.println("Hello " + i + this.getName());
 			try {
-				Thread.sleep(10);
+				Thread.sleep(1000);
 			} catch (InterruptedException e) {
 				e.printStackTrace();
 			}
@@ -29,8 +29,6 @@ public class MultiThread {
 		Runner runner2 = new Runner();
 		runner1.start();
 		runner2.start();
-		ArrayList list = new ArrayList();
-		System.out.println();
 	}
 
 }
