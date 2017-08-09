@@ -11,7 +11,7 @@ public class CheckAccount {
 	}
 
 	public void checkbalance() {
-		System.out.println(balance);
+	
 	}
 
 	public void deposits(double x) {

@@ -16,7 +16,7 @@ function Login(){
 	var x = document.getElementById("usernameTb").value;
 	var y = document.getElementById("pinTb").value;
 	if(x=="" && y==""){
-		window.alert("Please Enter valid username and password")
+		window.alert("Please Enter valid username and password");
 	}
 	else if(x==name && y == pin)
 		{
